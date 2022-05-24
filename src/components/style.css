@@ -13,7 +13,7 @@ input {
   max-width: 500px;
   width: 100%;
   margin: auto;
-  margin-top: 24px;
+  margin-top: 124px;
   margin-bottom: 150px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
   padding: 1.5rem;
@@ -140,15 +140,19 @@ input {
 }
 
 .parent-warper {
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding: 124px 0 24px 0;
 }
 
 /* header styling */
 
 .header {
   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-  padding: 0.8rem;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  top: 0;
 }
 
 .header ul {
