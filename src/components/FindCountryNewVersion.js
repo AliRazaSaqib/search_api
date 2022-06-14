@@ -73,7 +73,7 @@ function FindCountryNewVersion() {
     return (
       <div className="parent-warper">
         <div className="wrapper">
-          <h2>Select value from dropdown and than Search data from api</h2>
+          <h2>Select value from dropdown and than Search user data from api</h2>
           <div className="search-wrapper">
             <label htmlFor="search-form">
               <input

@@ -2,15 +2,21 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import "./style.css";
+import { useDispatch } from "react-redux";
+import { LogoutAction } from "../redux/action";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(LogoutAction());
+  };
   return (
     <>
       <div className="header">
         <ul>
           <li>
-            <Link className="link" to="/">
+            <Link className="link" to="/findcountry">
               Simple Searcing
             </Link>
           </li>
@@ -20,6 +26,9 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <button className="btn" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </>
   );
